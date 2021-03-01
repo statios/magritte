@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F98EF76825ED36FD0025B82C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF76725ED36FD0025B82C /* AppDelegate.swift */; };
+		F98EF77125ED37000025B82C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98EF77025ED37000025B82C /* Images.xcassets */; };
+		F98EF77425ED37000025B82C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98EF77225ED37000025B82C /* LaunchScreen.storyboard */; };
+		F98EF77F25ED37000025B82C /* magritteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF77E25ED37000025B82C /* magritteTests.swift */; };
+		F98EF78A25ED37000025B82C /* magritteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF78925ED37000025B82C /* magritteUITests.swift */; };
+		F98EF7BF25ED39F90025B82C /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF7BE25ED39F90025B82C /* CanvasViewController.swift */; };
+		F98EF7C725ED3A1B0025B82C /* CanvasViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF7C625ED3A1B0025B82C /* CanvasViewReactor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F98EF77B25ED37000025B82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F98EF75C25ED36FD0025B82C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98EF76325ED36FD0025B82C;
+			remoteInfo = magritte;
+		};
+		F98EF78625ED37000025B82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F98EF75C25ED36FD0025B82C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98EF76325ED36FD0025B82C;
+			remoteInfo = magritte;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F98EF76425ED36FD0025B82C /* magritte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magritte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98EF76725ED36FD0025B82C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F98EF77025ED37000025B82C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F98EF77325ED37000025B82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F98EF77525ED37000025B82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98EF77A25ED37000025B82C /* magritteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magritteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98EF77E25ED37000025B82C /* magritteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magritteTests.swift; sourceTree = "<group>"; };
+		F98EF78025ED37000025B82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98EF78525ED37000025B82C /* magritteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magritteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98EF78925ED37000025B82C /* magritteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magritteUITests.swift; sourceTree = "<group>"; };
+		F98EF78B25ED37000025B82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98EF7BE25ED39F90025B82C /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		F98EF7C625ED3A1B0025B82C /* CanvasViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewReactor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F98EF76125ED36FD0025B82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98EF77725ED37000025B82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98EF78225ED37000025B82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F98EF75B25ED36FD0025B82C = {
+			isa = PBXGroup;
+			children = (
+				F98EF76625ED36FD0025B82C /* magritte */,
+				F98EF77D25ED37000025B82C /* magritteTests */,
+				F98EF78825ED37000025B82C /* magritteUITests */,
+				F98EF76525ED36FD0025B82C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F98EF76525ED36FD0025B82C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF76425ED36FD0025B82C /* magritte.app */,
+				F98EF77A25ED37000025B82C /* magritteTests.xctest */,
+				F98EF78525ED37000025B82C /* magritteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F98EF76625ED36FD0025B82C /* magritte */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7A325ED38210025B82C /* Sources */,
+				F98EF7A725ED38330025B82C /* Resources */,
+				F98EF7A825ED383A0025B82C /* Supportings */,
+			);
+			path = magritte;
+			sourceTree = "<group>";
+		};
+		F98EF77D25ED37000025B82C /* magritteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF77E25ED37000025B82C /* magritteTests.swift */,
+				F98EF78025ED37000025B82C /* Info.plist */,
+			);
+			path = magritteTests;
+			sourceTree = "<group>";
+		};
+		F98EF78825ED37000025B82C /* magritteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF78925ED37000025B82C /* magritteUITests.swift */,
+				F98EF78B25ED37000025B82C /* Info.plist */,
+			);
+			path = magritteUITests;
+			sourceTree = "<group>";
+		};
+		F98EF7A325ED38210025B82C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7AA25ED38510025B82C /* Application */,
+				F98EF7AE25ED38590025B82C /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F98EF7A725ED38330025B82C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7B525ED38D10025B82C /* Assets */,
+				F98EF7B625ED38DE0025B82C /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F98EF7A825ED383A0025B82C /* Supportings */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7A925ED38490025B82C /* plists */,
+			);
+			path = Supportings;
+			sourceTree = "<group>";
+		};
+		F98EF7A925ED38490025B82C /* plists */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF77525ED37000025B82C /* Info.plist */,
+			);
+			path = plists;
+			sourceTree = "<group>";
+		};
+		F98EF7AA25ED38510025B82C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF76725ED36FD0025B82C /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F98EF7AE25ED38590025B82C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7BD25ED39E10025B82C /* Canvas */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F98EF7B525ED38D10025B82C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF77025ED37000025B82C /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F98EF7B625ED38DE0025B82C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF77225ED37000025B82C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F98EF7BD25ED39E10025B82C /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7BE25ED39F90025B82C /* CanvasViewController.swift */,
+				F98EF7C625ED3A1B0025B82C /* CanvasViewReactor.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F98EF76325ED36FD0025B82C /* magritte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98EF78E25ED37000025B82C /* Build configuration list for PBXNativeTarget "magritte" */;
+			buildPhases = (
+				F98EF76025ED36FD0025B82C /* Sources */,
+				F98EF76125ED36FD0025B82C /* Frameworks */,
+				F98EF76225ED36FD0025B82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = magritte;
+			productName = magritte;
+			productReference = F98EF76425ED36FD0025B82C /* magritte.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F98EF77925ED37000025B82C /* magritteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98EF79125ED37000025B82C /* Build configuration list for PBXNativeTarget "magritteTests" */;
+			buildPhases = (
+				F98EF77625ED37000025B82C /* Sources */,
+				F98EF77725ED37000025B82C /* Frameworks */,
+				F98EF77825ED37000025B82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F98EF77C25ED37000025B82C /* PBXTargetDependency */,
+			);
+			name = magritteTests;
+			productName = magritteTests;
+			productReference = F98EF77A25ED37000025B82C /* magritteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F98EF78425ED37000025B82C /* magritteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98EF79425ED37000025B82C /* Build configuration list for PBXNativeTarget "magritteUITests" */;
+			buildPhases = (
+				F98EF78125ED37000025B82C /* Sources */,
+				F98EF78225ED37000025B82C /* Frameworks */,
+				F98EF78325ED37000025B82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F98EF78725ED37000025B82C /* PBXTargetDependency */,
+			);
+			name = magritteUITests;
+			productName = magritteUITests;
+			productReference = F98EF78525ED37000025B82C /* magritteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F98EF75C25ED36FD0025B82C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F98EF76325ED36FD0025B82C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F98EF77925ED37000025B82C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F98EF76325ED36FD0025B82C;
+					};
+					F98EF78425ED37000025B82C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F98EF76325ED36FD0025B82C;
+					};
+				};
+			};
+			buildConfigurationList = F98EF75F25ED36FD0025B82C /* Build configuration list for PBXProject "magritte" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F98EF75B25ED36FD0025B82C;
+			productRefGroup = F98EF76525ED36FD0025B82C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F98EF76325ED36FD0025B82C /* magritte */,
+				F98EF77925ED37000025B82C /* magritteTests */,
+				F98EF78425ED37000025B82C /* magritteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F98EF76225ED36FD0025B82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98EF77425ED37000025B82C /* LaunchScreen.storyboard in Resources */,
+				F98EF77125ED37000025B82C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98EF77825ED37000025B82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98EF78325ED37000025B82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F98EF76025ED36FD0025B82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98EF7BF25ED39F90025B82C /* CanvasViewController.swift in Sources */,
+				F98EF76825ED36FD0025B82C /* AppDelegate.swift in Sources */,
+				F98EF7C725ED3A1B0025B82C /* CanvasViewReactor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98EF77625ED37000025B82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98EF77F25ED37000025B82C /* magritteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98EF78125ED37000025B82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98EF78A25ED37000025B82C /* magritteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F98EF77C25ED37000025B82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F98EF76325ED36FD0025B82C /* magritte */;
+			targetProxy = F98EF77B25ED37000025B82C /* PBXContainerItemProxy */;
+		};
+		F98EF78725ED37000025B82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F98EF76325ED36FD0025B82C /* magritte */;
+			targetProxy = F98EF78625ED37000025B82C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F98EF77225ED37000025B82C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F98EF77325ED37000025B82C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F98EF78C25ED37000025B82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F98EF78D25ED37000025B82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F98EF78F25ED37000025B82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = magritte/Supportings/plists/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F98EF79025ED37000025B82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = magritte/Supportings/plists/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F98EF79225ED37000025B82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = magritteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magritte.app/magritte";
+			};
+			name = Debug;
+		};
+		F98EF79325ED37000025B82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = magritteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magritte.app/magritte";
+			};
+			name = Release;
+		};
+		F98EF79525ED37000025B82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = magritteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = magritte;
+			};
+			name = Debug;
+		};
+		F98EF79625ED37000025B82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YL8LS5ZJC;
+				INFOPLIST_FILE = magritteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = magritte;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F98EF75F25ED36FD0025B82C /* Build configuration list for PBXProject "magritte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98EF78C25ED37000025B82C /* Debug */,
+				F98EF78D25ED37000025B82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98EF78E25ED37000025B82C /* Build configuration list for PBXNativeTarget "magritte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98EF78F25ED37000025B82C /* Debug */,
+				F98EF79025ED37000025B82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98EF79125ED37000025B82C /* Build configuration list for PBXNativeTarget "magritteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98EF79225ED37000025B82C /* Debug */,
+				F98EF79325ED37000025B82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98EF79425ED37000025B82C /* Build configuration list for PBXNativeTarget "magritteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98EF79525ED37000025B82C /* Debug */,
+				F98EF79625ED37000025B82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F98EF75C25ED36FD0025B82C /* Project object */;
+}
