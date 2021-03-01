@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,23 @@
 		F98EF78A25ED37000025B82C /* magritteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF78925ED37000025B82C /* magritteUITests.swift */; };
 		F98EF7BF25ED39F90025B82C /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF7BE25ED39F90025B82C /* CanvasViewController.swift */; };
 		F98EF7C725ED3A1B0025B82C /* CanvasViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF7C625ED3A1B0025B82C /* CanvasViewReactor.swift */; };
+		F98EF7CD25ED3BB20025B82C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F98EF7CC25ED3BB20025B82C /* RxSwift */; };
+		F98EF7CF25ED3BB20025B82C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F98EF7CE25ED3BB20025B82C /* RxCocoa */; };
+		F98EF7D125ED3BB20025B82C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F98EF7D025ED3BB20025B82C /* RxRelay */; };
+		F98EF7D725ED3BD60025B82C /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = F98EF7D625ED3BD60025B82C /* ReactorKit */; };
+		F98EF7DD25ED3C000025B82C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F98EF7DC25ED3C000025B82C /* SnapKit */; };
+		F98EF7E325ED3C130025B82C /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F98EF7E225ED3C130025B82C /* Then */; };
+		F98EF7E925ED3C730025B82C /* SwiftyDraw in Frameworks */ = {isa = PBXBuildFile; productRef = F98EF7E825ED3C730025B82C /* SwiftyDraw */; };
+		F98EF7EF25ED3F090025B82C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF7EE25ED3F090025B82C /* BaseViewController.swift */; };
+		F98EF7F825ED3F360025B82C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF7F725ED3F360025B82C /* Log.swift */; };
+		F98EF80325ED43AB0025B82C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98EF80225ED43AB0025B82C /* Colors.xcassets */; };
+		F98EF84225ED47310025B82C /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF84125ED47310025B82C /* Int.swift */; };
+		F98EF84A25ED48E50025B82C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF84925ED48E50025B82C /* UIView.swift */; };
+		F98EF85225ED4F240025B82C /* BaseReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF85125ED4F240025B82C /* BaseReactor.swift */; };
+		F98EF85725ED56120025B82C /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF85625ED56120025B82C /* UICollectionView.swift */; };
+		F98EF85D25ED58860025B82C /* PaletteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF85C25ED58860025B82C /* PaletteCell.swift */; };
+		F98EF86D25ED5B5F0025B82C /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF86C25ED5B5F0025B82C /* BaseCollectionViewCell.swift */; };
+		F98EF87325ED5C770025B82C /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF87225ED5C770025B82C /* Palette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +64,16 @@
 		F98EF78B25ED37000025B82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F98EF7BE25ED39F90025B82C /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		F98EF7C625ED3A1B0025B82C /* CanvasViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewReactor.swift; sourceTree = "<group>"; };
+		F98EF7EE25ED3F090025B82C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F98EF7F725ED3F360025B82C /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		F98EF80225ED43AB0025B82C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F98EF84125ED47310025B82C /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		F98EF84925ED48E50025B82C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F98EF85125ED4F240025B82C /* BaseReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseReactor.swift; sourceTree = "<group>"; };
+		F98EF85625ED56120025B82C /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		F98EF85C25ED58860025B82C /* PaletteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteCell.swift; sourceTree = "<group>"; };
+		F98EF86C25ED5B5F0025B82C /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		F98EF87225ED5C770025B82C /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +81,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98EF7E925ED3C730025B82C /* SwiftyDraw in Frameworks */,
+				F98EF7D125ED3BB20025B82C /* RxRelay in Frameworks */,
+				F98EF7E325ED3C130025B82C /* Then in Frameworks */,
+				F98EF7CF25ED3BB20025B82C /* RxCocoa in Frameworks */,
+				F98EF7D725ED3BD60025B82C /* ReactorKit in Frameworks */,
+				F98EF7CD25ED3BB20025B82C /* RxSwift in Frameworks */,
+				F98EF7DD25ED3C000025B82C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +161,10 @@
 			children = (
 				F98EF7AA25ED38510025B82C /* Application */,
 				F98EF7AE25ED38590025B82C /* Scenes */,
+				F98EF87125ED5C670025B82C /* Models */,
+				F98EF7ED25ED3EF80025B82C /* Bases */,
+				F98EF7F625ED3F210025B82C /* Utilities */,
+				F98EF83E25ED46C00025B82C /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -176,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				F98EF77025ED37000025B82C /* Images.xcassets */,
+				F98EF80225ED43AB0025B82C /* Colors.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -193,8 +232,69 @@
 			children = (
 				F98EF7BE25ED39F90025B82C /* CanvasViewController.swift */,
 				F98EF7C625ED3A1B0025B82C /* CanvasViewReactor.swift */,
+				F98EF85B25ED58750025B82C /* Views */,
 			);
 			path = Canvas;
+			sourceTree = "<group>";
+		};
+		F98EF7ED25ED3EF80025B82C /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7EE25ED3F090025B82C /* BaseViewController.swift */,
+				F98EF85125ED4F240025B82C /* BaseReactor.swift */,
+				F98EF86C25ED5B5F0025B82C /* BaseCollectionViewCell.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		F98EF7F625ED3F210025B82C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF7F725ED3F360025B82C /* Log.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F98EF83E25ED46C00025B82C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF84025ED472A0025B82C /* Foundation */,
+				F98EF83F25ED46C90025B82C /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F98EF83F25ED46C90025B82C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF84925ED48E50025B82C /* UIView.swift */,
+				F98EF85625ED56120025B82C /* UICollectionView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F98EF84025ED472A0025B82C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF84125ED47310025B82C /* Int.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F98EF85B25ED58750025B82C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF85C25ED58860025B82C /* PaletteCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F98EF87125ED5C670025B82C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF87225ED5C770025B82C /* Palette.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +313,15 @@
 			dependencies = (
 			);
 			name = magritte;
+			packageProductDependencies = (
+				F98EF7CC25ED3BB20025B82C /* RxSwift */,
+				F98EF7CE25ED3BB20025B82C /* RxCocoa */,
+				F98EF7D025ED3BB20025B82C /* RxRelay */,
+				F98EF7D625ED3BD60025B82C /* ReactorKit */,
+				F98EF7DC25ED3C000025B82C /* SnapKit */,
+				F98EF7E225ED3C130025B82C /* Then */,
+				F98EF7E825ED3C730025B82C /* SwiftyDraw */,
+			);
 			productName = magritte;
 			productReference = F98EF76425ED36FD0025B82C /* magritte.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +393,13 @@
 				Base,
 			);
 			mainGroup = F98EF75B25ED36FD0025B82C;
+			packageReferences = (
+				F98EF7CB25ED3BB20025B82C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F98EF7D525ED3BD60025B82C /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				F98EF7DB25ED3C000025B82C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F98EF7E125ED3C130025B82C /* XCRemoteSwiftPackageReference "Then" */,
+				F98EF7E725ED3C730025B82C /* XCRemoteSwiftPackageReference "SwiftyDraw" */,
+			);
 			productRefGroup = F98EF76525ED36FD0025B82C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98EF80325ED43AB0025B82C /* Colors.xcassets in Resources */,
 				F98EF77425ED37000025B82C /* LaunchScreen.storyboard in Resources */,
 				F98EF77125ED37000025B82C /* Images.xcassets in Resources */,
 			);
@@ -327,8 +444,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F98EF7BF25ED39F90025B82C /* CanvasViewController.swift in Sources */,
+				F98EF7F825ED3F360025B82C /* Log.swift in Sources */,
+				F98EF7EF25ED3F090025B82C /* BaseViewController.swift in Sources */,
+				F98EF87325ED5C770025B82C /* Palette.swift in Sources */,
+				F98EF85725ED56120025B82C /* UICollectionView.swift in Sources */,
+				F98EF86D25ED5B5F0025B82C /* BaseCollectionViewCell.swift in Sources */,
+				F98EF84A25ED48E50025B82C /* UIView.swift in Sources */,
+				F98EF85D25ED58860025B82C /* PaletteCell.swift in Sources */,
+				F98EF84225ED47310025B82C /* Int.swift in Sources */,
 				F98EF76825ED36FD0025B82C /* AppDelegate.swift in Sources */,
 				F98EF7C725ED3A1B0025B82C /* CanvasViewReactor.swift in Sources */,
+				F98EF85225ED4F240025B82C /* BaseReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritte;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -525,7 +651,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kihyunso.magritte;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -653,6 +779,87 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F98EF7CB25ED3BB20025B82C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		F98EF7D525ED3BD60025B82C /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		F98EF7DB25ED3C000025B82C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		F98EF7E125ED3C130025B82C /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		F98EF7E725ED3C730025B82C /* XCRemoteSwiftPackageReference "SwiftyDraw" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Awalz/SwiftyDraw";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F98EF7CC25ED3BB20025B82C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98EF7CB25ED3BB20025B82C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F98EF7CE25ED3BB20025B82C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98EF7CB25ED3BB20025B82C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F98EF7D025ED3BB20025B82C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98EF7CB25ED3BB20025B82C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		F98EF7D625ED3BD60025B82C /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98EF7D525ED3BD60025B82C /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		F98EF7DC25ED3C000025B82C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98EF7DB25ED3C000025B82C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F98EF7E225ED3C130025B82C /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98EF7E125ED3C130025B82C /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		F98EF7E825ED3C730025B82C /* SwiftyDraw */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F98EF7E725ED3C730025B82C /* XCRemoteSwiftPackageReference "SwiftyDraw" */;
+			productName = SwiftyDraw;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F98EF75C25ED36FD0025B82C /* Project object */;
 }
