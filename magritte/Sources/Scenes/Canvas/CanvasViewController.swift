@@ -14,15 +14,11 @@ import RxCocoa
 final class CanvasViewController: BaseViewController {
   private var canvasView = SwiftyDrawView()
   private var toolKitView = UIView()
-  private var whiteBackgroundColorButton = UIButton()
-  private var blackBackgroundColorButton = UIButton()
-  private var paletteCollectionView = UICollectionView(
-    frame: .zero,
-    collectionViewLayout: UICollectionViewFlowLayout()
-  )
-  private var undoButton = UIButton()
-  private var redoButton = UIButton()
-  private var clearButton = UIButton()
+  private var stackView = UIStackView()
+  private var canvasColorPirckerView = CanvasColorPickerView()
+  private var brushColorPickerView = BrushColorPickerView()
+  private var canvasControllerView = CanvasControllerView()
+  private var brushPickerView = BrushPickerView()
   
   override func configure() {
     reactor = CanvasViewReactor()
@@ -43,7 +39,6 @@ extension CanvasViewController {
       $0.snp.makeConstraints { (make) in
         make.edges.equalToSuperview()
       }
-      $0.brush = .marker
     }
     
     toolKitView.do {
@@ -58,70 +53,28 @@ extension CanvasViewController {
       $0.layer.cornerRadius = 16
     }
     
-    whiteBackgroundColorButton.do {
+    stackView.do {
       $0.add(to: toolKitView)
       $0.snp.makeConstraints { (make) in
-        make.centerY.equalToSuperview()
         make.leading.equalToSuperview().offset(32)
-        make.size.equalTo(40)
-      }
-      $0.styledToolKitButton(.white)
-    }
-    
-    blackBackgroundColorButton.do {
-      $0.add(to: toolKitView)
-      $0.snp.makeConstraints { (make) in
-        make.centerY.equalToSuperview()
-        make.leading.equalTo(whiteBackgroundColorButton.snp.trailing).offset(8)
-        make.size.equalTo(40)
-      }
-      $0.styledToolKitButton(.black)
-    }
-    
-    paletteCollectionView.do {
-      $0.add(to: toolKitView)
-      $0.snp.makeConstraints { (make) in
-        make.leading.equalTo(blackBackgroundColorButton.snp.trailing).offset(32)
-        make.centerY.equalToSuperview()
-        make.height.equalTo(32 + 8 + 32)
-        make.width.equalTo(32 * 4 + 3 * 8)
-      }
-      $0.register(PaletteCell.self, forCellWithReuseIdentifier: "PaletteCell")
-      $0.backgroundColor = .clear
-      $0.flowLayout?.minimumLineSpacing = 8
-      $0.flowLayout?.minimumInteritemSpacing = 8
-      $0.flowLayout?.itemSize = .init(width: 32, height: 32)
-    }
-    
-    clearButton.do {
-      $0.add(to: toolKitView)
-      $0.snp.makeConstraints { (make) in
         make.trailing.equalToSuperview().offset(-32)
-        make.size.equalTo(40)
-        make.centerY.equalToSuperview()
+        make.top.bottom.equalToSuperview()
       }
-      $0.styledToolKitButton(.white)
-      $0.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
+      $0.axis = .horizontal
+      $0.alignment = .center
+      $0.distribution = .equalSpacing
+      $0.addArrangedSubview(canvasColorPirckerView)
+      $0.addArrangedSubview(brushColorPickerView)
+      $0.addArrangedSubview(brushPickerView)
+      $0.addArrangedSubview(canvasControllerView)
     }
     
-    redoButton.do {
-      $0.add(to: toolKitView)
-      $0.snp.makeConstraints { (make) in
-        make.trailing.equalTo(clearButton.snp.leading).offset(-8)
-        make.centerY.size.equalTo(clearButton)
-      }
-      $0.styledToolKitButton(.white)
-      $0.setImage(UIImage(systemName: "arrow.turn.up.right"), for: .normal)
+    brushPickerView.do {
+      $0.collectionView.selectItem(at: .init(row: 1, section: 0))
     }
     
-    undoButton.do {
-      $0.add(to: toolKitView)
-      $0.snp.makeConstraints { (make) in
-        make.trailing.equalTo(redoButton.snp.leading).offset(-8)
-        make.centerY.size.equalTo(clearButton)
-      }
-      $0.styledToolKitButton(.white)
-      $0.setImage(UIImage(systemName: "arrow.turn.up.left"), for: .normal)
+    brushColorPickerView.do {
+      $0.collectionView.selectItem(at: .init(row: 7, section: 0))
     }
     
   }
@@ -136,50 +89,27 @@ extension CanvasViewController: View {
     
     // State
     reactor.state.map { $0.paletteColors }
-      .bind(
-        to: paletteCollectionView.rx.items(
-          cellIdentifier: "PaletteCell",
-          cellType: PaletteCell.self
-        )
-      ) { (index, color, cell) in
-        cell.configure(color)
-      }.disposed(by: disposeBag)
-    
-    // View
-    paletteCollectionView.rx.modelSelected(UIColor.self)
       .subscribe(onNext: { [weak self] in
-        self?.canvasView.brush.color = Color($0)
+        self?.brushColorPickerView.configure($0)
       }).disposed(by: disposeBag)
     
-    Observable.merge(
-      whiteBackgroundColorButton.rx.tap.map { UIColor.white },
-      blackBackgroundColorButton.rx.tap.map { UIColor.black }
-    ).bind(to: view.rx.backgroundColor)
-    .disposed(by: disposeBag)
+    reactor.state.map { $0.burshs }
+      .subscribe(onNext: { [weak self] in
+        self?.brushPickerView.configure($0)
+      }).disposed(by: disposeBag)
     
-    clearButton.rx.tap
-      .subscribe(onNext: { [weak self] in self?.canvasView.clear() })
-      .disposed(by: disposeBag)
-    
-    redoButton.rx.tap
-      .subscribe(onNext: { [weak self] in self?.canvasView.redo() })
-      .disposed(by: disposeBag)
-    
-    undoButton.rx.tap
-      .subscribe(onNext: { [weak self] in self?.canvasView.undo() })
-      .disposed(by: disposeBag)
+    // Views
+    Observable.combineLatest(
+      brushColorPickerView.collectionView.rx
+        .modelSelected(UIColor.self)
+        .startWith(.black),
+      brushPickerView.collectionView.rx
+        .modelSelected(Brush.self)
+        .startWith(.normal)
+    ).subscribe(onNext: { [weak self] in
+      self?.canvasView.brush = $0.1
+      self?.canvasView.brush.color = Color($0.0)
+    }).disposed(by: disposeBag)
   }
   
-}
-
-// MARK:- Helpers
-extension UIView {
-  fileprivate func styledToolKitButton(_ color: UIColor) {
-    backgroundColor = color
-    layer.cornerRadius = 20.00
-    layer.shadowColor = UIColor.black.cgColor
-    layer.shadowOpacity = 0.10
-    layer.shadowOffset = .zero
-    layer.shadowRadius = 2.00
-  }
 }

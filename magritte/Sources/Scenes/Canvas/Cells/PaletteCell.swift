@@ -18,7 +18,7 @@ final class PaletteCell: BaseCollectionViewCell {
   func configure(_ color: UIColor) {
     contentView.do {
       $0.backgroundColor = color
-      $0.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
+      $0.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
     }
   }
   

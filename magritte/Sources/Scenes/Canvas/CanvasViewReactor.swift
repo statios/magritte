@@ -7,6 +7,7 @@
 
 import ReactorKit
 import UIKit
+import SwiftyDraw
 
 final class CanvasViewReactor: BaseReactor {
   
@@ -20,6 +21,7 @@ final class CanvasViewReactor: BaseReactor {
   
   struct State {
     var paletteColors: [UIColor]
+    var burshs: [Brush]
   }
   
   var initialState = State(
@@ -32,7 +34,8 @@ final class CanvasViewReactor: BaseReactor {
       .systemBlue,
       .systemIndigo,
       .black
-    ]
+    ],
+    burshs: [.thin, .normal, .medium, .thick, .marker, .eraser]
   )
   
 }

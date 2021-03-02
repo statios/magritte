@@ -31,6 +31,14 @@
 		F98EF85D25ED58860025B82C /* PaletteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF85C25ED58860025B82C /* PaletteCell.swift */; };
 		F98EF86D25ED5B5F0025B82C /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF86C25ED5B5F0025B82C /* BaseCollectionViewCell.swift */; };
 		F98EF87325ED5C770025B82C /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF87225ED5C770025B82C /* Palette.swift */; };
+		F98EF89A25EE074F0025B82C /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF89925EE074F0025B82C /* BaseCollectionView.swift */; };
+		F98EF89F25EE08E00025B82C /* BrushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF89E25EE08E00025B82C /* BrushCell.swift */; };
+		F98EF8A425EE0D990025B82C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF8A325EE0D990025B82C /* BaseView.swift */; };
+		F98EF8A925EE0E040025B82C /* CanvasColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF8A825EE0E040025B82C /* CanvasColorPickerView.swift */; };
+		F98EF8B425EE118F0025B82C /* BrushColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF8B325EE118F0025B82C /* BrushColorPickerView.swift */; };
+		F98EF8C025EE16020025B82C /* CanvasControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF8BF25EE16020025B82C /* CanvasControllerView.swift */; };
+		F98EF8C525EE19480025B82C /* BrushPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF8C425EE19480025B82C /* BrushPickerView.swift */; };
+		F98EF8CE25EE47150025B82C /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EF8CD25EE47150025B82C /* Brush.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +82,14 @@
 		F98EF85C25ED58860025B82C /* PaletteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteCell.swift; sourceTree = "<group>"; };
 		F98EF86C25ED5B5F0025B82C /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		F98EF87225ED5C770025B82C /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		F98EF89925EE074F0025B82C /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		F98EF89E25EE08E00025B82C /* BrushCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushCell.swift; sourceTree = "<group>"; };
+		F98EF8A325EE0D990025B82C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F98EF8A825EE0E040025B82C /* CanvasColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasColorPickerView.swift; sourceTree = "<group>"; };
+		F98EF8B325EE118F0025B82C /* BrushColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushColorPickerView.swift; sourceTree = "<group>"; };
+		F98EF8BF25EE16020025B82C /* CanvasControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasControllerView.swift; sourceTree = "<group>"; };
+		F98EF8C425EE19480025B82C /* BrushPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushPickerView.swift; sourceTree = "<group>"; };
+		F98EF8CD25EE47150025B82C /* Brush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +249,7 @@
 				F98EF7BE25ED39F90025B82C /* CanvasViewController.swift */,
 				F98EF7C625ED3A1B0025B82C /* CanvasViewReactor.swift */,
 				F98EF85B25ED58750025B82C /* Views */,
+				F98EF8BB25EE15A80025B82C /* Cells */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -243,6 +260,8 @@
 				F98EF7EE25ED3F090025B82C /* BaseViewController.swift */,
 				F98EF85125ED4F240025B82C /* BaseReactor.swift */,
 				F98EF86C25ED5B5F0025B82C /* BaseCollectionViewCell.swift */,
+				F98EF89925EE074F0025B82C /* BaseCollectionView.swift */,
+				F98EF8A325EE0D990025B82C /* BaseView.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -258,6 +277,7 @@
 		F98EF83E25ED46C00025B82C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F98EF8CC25EE47050025B82C /* SwiftyDraw */,
 				F98EF84025ED472A0025B82C /* Foundation */,
 				F98EF83F25ED46C90025B82C /* UIKit */,
 			);
@@ -284,7 +304,10 @@
 		F98EF85B25ED58750025B82C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F98EF85C25ED58860025B82C /* PaletteCell.swift */,
+				F98EF8A825EE0E040025B82C /* CanvasColorPickerView.swift */,
+				F98EF8B325EE118F0025B82C /* BrushColorPickerView.swift */,
+				F98EF8BF25EE16020025B82C /* CanvasControllerView.swift */,
+				F98EF8C425EE19480025B82C /* BrushPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +318,23 @@
 				F98EF87225ED5C770025B82C /* Palette.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F98EF8BB25EE15A80025B82C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF85C25ED58860025B82C /* PaletteCell.swift */,
+				F98EF89E25EE08E00025B82C /* BrushCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F98EF8CC25EE47050025B82C /* SwiftyDraw */ = {
+			isa = PBXGroup;
+			children = (
+				F98EF8CD25EE47150025B82C /* Brush.swift */,
+			);
+			path = SwiftyDraw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,15 +484,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F98EF7BF25ED39F90025B82C /* CanvasViewController.swift in Sources */,
+				F98EF89A25EE074F0025B82C /* BaseCollectionView.swift in Sources */,
+				F98EF8CE25EE47150025B82C /* Brush.swift in Sources */,
+				F98EF8A925EE0E040025B82C /* CanvasColorPickerView.swift in Sources */,
 				F98EF7F825ED3F360025B82C /* Log.swift in Sources */,
 				F98EF7EF25ED3F090025B82C /* BaseViewController.swift in Sources */,
+				F98EF89F25EE08E00025B82C /* BrushCell.swift in Sources */,
+				F98EF8C525EE19480025B82C /* BrushPickerView.swift in Sources */,
 				F98EF87325ED5C770025B82C /* Palette.swift in Sources */,
 				F98EF85725ED56120025B82C /* UICollectionView.swift in Sources */,
 				F98EF86D25ED5B5F0025B82C /* BaseCollectionViewCell.swift in Sources */,
 				F98EF84A25ED48E50025B82C /* UIView.swift in Sources */,
+				F98EF8B425EE118F0025B82C /* BrushColorPickerView.swift in Sources */,
 				F98EF85D25ED58860025B82C /* PaletteCell.swift in Sources */,
 				F98EF84225ED47310025B82C /* Int.swift in Sources */,
 				F98EF76825ED36FD0025B82C /* AppDelegate.swift in Sources */,
+				F98EF8C025EE16020025B82C /* CanvasControllerView.swift in Sources */,
+				F98EF8A425EE0D990025B82C /* BaseView.swift in Sources */,
 				F98EF7C725ED3A1B0025B82C /* CanvasViewReactor.swift in Sources */,
 				F98EF85225ED4F240025B82C /* BaseReactor.swift in Sources */,
 			);

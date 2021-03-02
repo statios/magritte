@@ -13,3 +13,14 @@ extension UIView {
     to.addSubview(self)
   }
 }
+
+extension UIView {
+  func styledToolKitButton(_ color: UIColor) {
+    backgroundColor = color
+    layer.cornerRadius = 20.00
+    layer.shadowColor = UIColor.black.cgColor
+    layer.shadowOpacity = 0.10
+    layer.shadowOffset = .zero
+    layer.shadowRadius = 2.00
+  }
+}

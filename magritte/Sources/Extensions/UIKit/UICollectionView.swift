@@ -11,4 +11,10 @@ extension UICollectionView {
   var flowLayout: UICollectionViewFlowLayout? {
     return collectionViewLayout as? UICollectionViewFlowLayout
   }
+  
+  func selectItem(
+    at: IndexPath
+  ) {
+    selectItem(at: at, animated: false, scrollPosition: .bottom)
+  }
 }
