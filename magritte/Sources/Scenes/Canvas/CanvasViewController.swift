@@ -29,7 +29,6 @@ final class CanvasViewController: BaseViewController {
 extension CanvasViewController {
   
   override func setupUI() {
-    
     view.do {
       $0.backgroundColor = .white
     }
@@ -76,7 +75,6 @@ extension CanvasViewController {
     brushColorPickerView.do {
       $0.collectionView.selectItem(at: .init(row: 7, section: 0))
     }
-    
   }
   
 }
@@ -109,6 +107,28 @@ extension CanvasViewController: View {
     ).subscribe(onNext: { [weak self] in
       self?.canvasView.brush = $0.1
       self?.canvasView.brush.color = Color($0.0)
+    }).disposed(by: disposeBag)
+    
+    canvasControllerView.undoButton.rx.tap
+      .subscribe(onNext: { [weak self] in
+        self?.canvasView.undo()
+      }).disposed(by: disposeBag)
+    
+    canvasControllerView.redoButton.rx.tap
+      .subscribe(onNext: { [weak self] in
+        self?.canvasView.redo()
+      }).disposed(by: disposeBag)
+    
+    canvasControllerView.clearButton.rx.tap
+      .subscribe(onNext: { [weak self] in
+        self?.canvasView.clear()
+      }).disposed(by: disposeBag)
+    
+    Observable.merge(
+      canvasColorPirckerView.whiteColorButton.rx.tap .map { UIColor.white },
+      canvasColorPirckerView.blackColorButton.rx.tap .map { UIColor.black }
+    ).subscribe(onNext: { [weak self] in
+      self?.canvasView.backgroundColor = $0
     }).disposed(by: disposeBag)
   }
   

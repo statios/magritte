@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 final class CanvasControllerView: BaseView {
-  private var undoButton = UIButton()
-  private var redoButton = UIButton()
-  private var clearButton = UIButton()
+  var undoButton = UIButton()
+  var redoButton = UIButton()
+  var clearButton = UIButton()
   
   override var intrinsicContentSize: CGSize {
     return .init(width: 40 * 3 + 8 * 2, height: 40)

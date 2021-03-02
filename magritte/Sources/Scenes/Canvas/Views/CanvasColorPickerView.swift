@@ -8,8 +8,8 @@
 import UIKit
 
 class CanvasColorPickerView: BaseView {
-  private let whiteColorButton = UIButton()
-  private let blackColorButton = UIButton()
+  let whiteColorButton = UIButton()
+  let blackColorButton = UIButton()
 }
 
 extension CanvasColorPickerView {
