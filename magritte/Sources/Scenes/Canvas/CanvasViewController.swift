@@ -68,13 +68,6 @@ extension CanvasViewController {
       $0.addArrangedSubview(canvasControllerView)
     }
     
-    brushPickerView.do {
-      $0.collectionView.selectItem(at: .init(row: 1, section: 0))
-    }
-    
-    brushColorPickerView.do {
-      $0.collectionView.selectItem(at: .init(row: 7, section: 0))
-    }
   }
   
 }
@@ -91,9 +84,21 @@ extension CanvasViewController: View {
         self?.brushColorPickerView.configure($0)
       }).disposed(by: disposeBag)
     
+    reactor.state.map { $0.paletteColors }
+      .map { IndexPath(item: $0.count - 1, section: 0) }
+      .subscribe(onNext: { [weak self] in
+        self?.brushColorPickerView.collectionView.selectItem(at: $0)
+      }).disposed(by: disposeBag)
+    
     reactor.state.map { $0.burshs }
       .subscribe(onNext: { [weak self] in
         self?.brushPickerView.configure($0)
+      }).disposed(by: disposeBag)
+    
+    reactor.state.map { $0.burshs }
+      .subscribe(onNext: { [weak self] _ in
+        self?.brushPickerView.collectionView
+          .selectItem(at: .init(item: 1, section: 0))
       }).disposed(by: disposeBag)
     
     // Views
